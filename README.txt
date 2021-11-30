@@ -1,18 +1,24 @@
-Program jest pisany na szybko z racji małej ilości czasu więc pewnie można zoptymalizować jest także autorkski więc możliwe że można zanleźć jakiś wzorzec lepszego rozwiązania ale lubie wynajdować koło na nowo więc sobie napisałem a co :D
-umieszczam też filmik z przykładem dla słowa "pies"
+Program jest pisany na szybko z racji małej ilości czasu, więc pewnie można zoptymalizować. Jest także autorski, więc możliwe, że można zanleźć jakiś wzorzec lepszego rozwiązania, ale lubię wynajdować koło na nowo, więc sobie napisałem.
+Umieszczam też filmik z przykładem dla słowa "pies".
 kod w folderze letter
 
 
 Pomysły na ooptymalizacje:
--ktoś ma jakiś lepszy sposób na dynamiczne zaalokowanie tablicy na arduino??
--być może dałoby się jakoś inaczej zapisać wartości diod do brailla(myślałem nad szablonem ale wydaje mi się że to i tak sprowadzi się do tego samego, ale można spróbować polecam dla osób które chcą poćwiczyć programowanie obiektowe)
-pomysły na wykonanie całego urządzenia:
+-ktoś ma jakiś lepszy sposób na dynamiczne zaalokowanie tablicy na arduino?
+-być może dałoby się jakoś inaczej zapisać wartości diod do Brailla(myślałem nad szablonem, ale wydaje mi się, że to i tak sprowadzi się do tego samego, ale można spróbować. Polecam dla osób, które chcą poćwiczyć programowanie obiektowe)
+
+Pomysły na wykonanie całego urządzenia:
 zastosowanie do wszystkich:
-zamiast diod urzyć elektromagnesów wypychających,
-zrobić np pieć szóstek wtedy maksymalne wyrazy błędą pięcio literowe(oczywiście liczbę 6 można zwiększać kosztem wielkości układu programistycznie to nie problem)
+zamiast diod użyć elektromagnesów wypychających,
+zrobić np pięć szóstek wtedy maksymalne wyrazy będą pięcio literowe(oczywiście liczbę szóstek można zwiększać kosztem wielkości układu programistycznie to nie problem)
 lub jedna szóstka i tak jak w tym przykładzie robimy zmianę litery na przycisk 
 Oczywiście można zrobić obie te rzeczy :D 
 jedna do nauki wyrazów druga do pojedyńczych liter 
+
+problem do wsyzstkiego:
+trzeba przemyślieć zasilanie 
+-akumulator plus ładowarka 
+-podłączenie do prądu i zasilacz 
 
 Pomysł 1.
 program który jest praktycznie pozostaje w takiej formie, piszemy aplikacje okienkową kabel usb z kompa do arudino i w ten sposób wpisujemy zdania
