@@ -1,5 +1,7 @@
 #include <Vector.h>
+#include <SoftwareSerial.h>
 #include "letter.h"
+SoftwareSerial hc06(0,1);
 #define Led0 2
 #define Led1 3
 #define Led2 4
@@ -12,6 +14,8 @@
 void setup() 
 {
   Serial.begin(9600);
+  Serial.println("słowo:");
+  hc06.begin(9600);
   digitalWrite(Led0, LOW);
   digitalWrite(Led1, LOW);
   digitalWrite(Led2, LOW);
@@ -24,9 +28,10 @@ void setup()
 void loop() 
 {
  String zdanie = ""; 
- if(Serial.available()>0)
+ if(hc06.available()>0)
  {
    zdanie=Serial.readStringUntil('\n');
+   zdanie.toLowerCase();
   
  Letters x(zdanie);
  for(int j=0;j<zdanie.length();j++)

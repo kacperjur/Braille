@@ -24,11 +24,11 @@ public:
   Letters(String zdanie)
   {
     N = zdanie.length();
-   
+   int i =0;
     
-    for(int i = 0; i < N; i++)
+    for(int a = 0; a < N; a++)
       {
-        char letter = zdanie[i];
+        char letter = zdanie[a];
          if(letter == 'a')
          {
             table[i]= new Braille(1, 0, 0, 0, 0, 0);
@@ -133,10 +133,15 @@ public:
          {
               table[i]= new Braille(0, 1, 0, 1, 1, 1);
          }
+         else if (letter == 32)
+         {
+          continue;
+         }
          else
          {
            table[i]=new Braille(0, 0, 0, 0, 0, 0);
          }
+         i++;
          
       }
 
